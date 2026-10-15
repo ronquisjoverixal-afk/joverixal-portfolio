@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joverix AL | IT Student & Aspiring Web Developer</title>
+  <meta name="description" content="Portfolio of Joverix AL, a BSIT student at ACLC College of Ormoc.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#home" class="logo" aria-label="Joverix AL home">JA</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">HELLO, I'M</p>
+        <h1>Joverix AL</h1>
+        <p class="role">IT Student | Aspiring Web Developer</p>
+        <p class="lead">I'm a BSIT student who enjoys learning and building useful web applications. I'm growing as a developer, one project at a time.</p>
+        <div class="btn-row">
+          <a class="btn primary" href="#projects">View My Projects</a>
+          <a class="btn outline" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="images/profile.jpg" alt="Portrait of Joverix AL">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <div class="heading"><h2>About Me</h2><p>A short introduction to who I am and where I'm headed.</p></div>
+        <div class="about-grid">
+          <div class="stack">
+            <article class="card"><h3>Who I am</h3><p>I'm Joverix AL, an IT student and aspiring web developer.</p></article>
+            <article class="card"><h3>Background and education</h3><p>BSIT student at ACLC College of Ormoc,<br>expected to graduate in 2028.</p></article>
+            <article class="card"><h3>Interests</h3><p>Web development and UI design.</p></article>
+            <article class="card"><h3>Career goals</h3><p>To become a capable web developer who builds<br>useful, well-designed web applications.</p></article>
+          </div>
+          <div class="portrait about-photo">
+            <img src="images/profile.jpg" alt="Portrait of Joverix AL">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="wrap">
+        <div class="heading"><h2>Skills</h2><p>Tools and areas I'm learning and using.</p></div>
+        <div class="skills">
+          <article class="card skill"><span class="icon">&lt;/&gt;</span><h3>HTML</h3><p>Structuring web pages with semantic markup.</p></article>
+          <article class="card skill"><span class="icon">{ }</span><h3>CSS</h3><p>Styling layouts, themes, and components.</p></article>
+          <article class="card skill"><span class="icon">JS</span><h3>JavaScript</h3><p>Adding interaction and behavior to pages.</p></article>
+          <article class="card skill"><span class="icon">UI</span><h3>Figma / UI Design</h3><p>Designing wireframes and interface mockups.</p></article>
+          <article class="card skill"><span class="icon">RWD</span><h3>Responsive Web Design</h3><p>Making layouts work across screen sizes.</p></article>
+          <article class="card skill note"><h4>Note</h4><p>No proficiency levels or percentages are shown.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <div class="heading"><h2>Projects</h2><p>My featured work.</p></div>
+        <article class="card project">
+          <div class="shot"><img src="images/grading-system.png" alt="Screenshot of the Gradify grading system"></div>
+          <div class="project-body">
+            <p class="label">Featured project</p>
+            <h3>Automated Grading System</h3>
+            <p class="desc">A system that allows teachers to encode student scores and generate grades.</p>
+            <p class="label tech-label">Technologies</p>
+            <span class="pill">To be confirmed</span>
+            <button class="btn primary" id="detailsBtn">View Details</button>
+          </div>
+        </article>
+        <div class="card placeholder">Placeholder: future projects will be added here</div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="wrap">
+        <div class="heading"><h2>Education</h2><p>My academic path.</p></div>
+        <ol class="timeline">
+          <li>
+            <span class="dot filled"></span>
+            <article class="card">
+              <h3>Bachelor of Science in Information Technology</h3>
+              <p class="school">ACLC College of Ormoc</p>
+              <p class="small">BSIT</p>
+            </article>
+          </li>
+          <li>
+            <span class="dot"></span>
+            <article class="card">
+              <p class="small">Expected graduation</p>
+              <p class="year">2028</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <div class="heading"><h2>Contact</h2><p>Want to get in touch? Email me or use the form.</p></div>
+        <div class="contact-grid">
+          <div class="stack">
+            <div class="card info"><p class="small">Email</p><a href="mailto:ronquisjoverixal@gmail.com">ronquisjoverixal@gmail.com</a></div>
+            <div class="card info"><p class="small">Facebook</p><p class="fb"><strong>Bryzx AL</strong><span>(profile link not provided)</span></p></div>
+          </div>
+          <form id="contactForm" class="card form" novalidate>
+            <h3>Send a message</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Required" autocomplete="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Required" autocomplete="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Write your message" required></textarea>
+            <p class="error" id="formError" role="alert"></p>
+            <button class="btn primary" type="submit">Send Message</button>
+            <p class="small">Opens your email app. Nothing is sent from this page.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <p>&copy; <span id="year">2026</span> Joverix AL</p>
+      <a href="mailto:ronquisjoverixal@gmail.com">ronquisjoverixal@gmail.com</a>
+    </div>
+  </footer>
+
+  <dialog id="detailsDialog" aria-labelledby="dlgTitle">
+    <h3 id="dlgTitle">Automated Grading System</h3>
+    <p>A system that allows teachers to encode student scores and generate grades.</p>
+    <p><strong>Technologies:</strong> To be confirmed</p>
+    <button class="btn primary" id="closeDialog">Close</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
